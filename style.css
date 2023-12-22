@@ -1,0 +1,110 @@
+
+
+body{
+    font-family: 'Oswald',"Noto Sans JP",sans-serif;
+    font-size: 100%;
+    color: #333;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* index.html */
+
+header{
+    background-color: #ccc;
+    height: 8vh;
+}
+
+header ul{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* profile */
+
+.profile h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.pro-img-name{
+    position: relative;
+}
+
+.profile-img{
+    margin-top: 5rem;
+    width: 60vw;
+}
+
+.profile-name{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 7vw;
+    z-index: 1;
+}
+
+.profile-img2{
+    width: 60vw;
+    flex-wrap: start;
+}
+
+.p-proimg2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.profile .p-proimg2 p{
+    font-size: 3rem;
+    align-items: center;
+}
+
+.photo-list{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.contaoner{
+    display: flex;
+}
+
+.container img{
+    width: 40vw;
+}
+
+.swiper {
+    width: 600px;
+    height: 55vh;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .view{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+  }

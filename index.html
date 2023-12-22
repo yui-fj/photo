@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="ress.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- javascript jquery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,400&family=Kiwi+Maru&family=Merriweather&family=Noto+Sans+JP:wght@400;700&family=Oswald&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+ <header>
+    <ul>
+        <li>
+            <a href="photo.html">Photograph</a>
+        </li>
+    </ul>
+ </header>
+
+ <main>
+    <section class="profile">
+         <h1>Photo gallery</h1>
+
+         <div class="pro-img-name">
+            <img src="images/IMG_3234 (1).png" alt="" class="profile-img">
+            <h2 class="profile-name">Fujimoto yuito</h2>
+         </div>
+
+
+        <div class="p-proimg2">
+          <p>
+             2003
+             <br>
+             Fukuoka
+          </p>
+          <img src="images/通信菜の花(広島).png" alt="" class="profile-img2">
+        </div>  
+    </section>
+
+    <section>
+        <h2 class="photo-list">Photograph</h2>
+    </section>
+
+  <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/青花1.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/青花2.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/青花3.png" alt=""></div>
+      <div class="swiper-slide"><img src="images/香椎夕焼け1.png" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  
+  <div class="view">
+  <p class="view"><a href="photo.html">view more</a></p>
+</div>
+
+ </main>
+
+
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script>
+    ScrollReveal({ reset: false, distance: "100px", duration: 2000 });
+    
+    ScrollReveal().reveal('.profile-img', { delay: 200, origin: "bottom"});
+    ScrollReveal().reveal('.p-proimg2 p', { delay: 200, origin: "bottom"});
+    ScrollReveal().reveal('.profile-img2', { delay: 250, origin: "bottom", interval:200});
+    ScrollReveal().reveal('.photo-list', { delay: 200, origin: "bottom"});
+    ScrollReveal().reveal('.swiper', { delay: 200, origin: "bottom"});
+</script>
+</body>
+</html>
